@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url(bg.png);
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#torres{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    margin: 10% auto;
+}
+
+#torre1, #torre2, #torre3 {
+    background-image: url(you.png);
+    background-size: 40vw 100%;
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+    width: 40vw;
+    height: 80%;
+    padding-bottom: 40px;
+}
+
+#bloco1 {
+    background-color: tomato;
+    height: 8%;
+    width: 80%;
+    border-radius: 15%;
+}
+
+#bloco2 {
+    background-color: lightblue;
+    height: 8%;
+    width: 60%;
+    border-radius: 15%;
+}
+
+#bloco3 {
+    background-color: green;
+    height:8%;
+    width: 40%;
+    border-radius: 15%;
+}
+
+#bloco4 {
+    background-color: blue;
+    height: 8%;
+    width: 20%;
+    border-radius: 15%;
+}
+
+
+@media (min-width : 500px){
+    #torres{
+        flex-direction: row;
+        width: 80vw;
+        height: 50vh;
+    }
+
+    #torre1, #torre2, #torre3 {
+        width: 20vw;
+        background-size: 20vw 100%;
+        padding-bottom: 90px;
+    }
+}
